@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://levyc574.github.io/GateView-Company-Website",
+  "homepage": "https://gateviewke.github.io/GateView-Company-Website/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
