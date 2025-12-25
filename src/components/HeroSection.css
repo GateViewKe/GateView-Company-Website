@@ -1,0 +1,121 @@
+/* ================================
+   HERO BASE (Unified with Navbar)
+   ================================ */
+
+.hero-section {
+  min-height: 100vh;
+  background-image: url("/assets/trial5.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ================================
+   CONTENT
+   ================================ */
+
+.hero-content {
+  padding-top: 14vh; /* breathing room below navbar without visual break */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ================================
+   TITLE
+   ================================ */
+
+.hero-title {
+  font-size: clamp(3.2rem, 6vw, 4.8rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: #0b1c24;
+  animation: glowPulse 6s ease-in-out infinite;
+}
+
+.hero-title::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 3px;
+  margin: 18px auto 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(82, 84, 85, 0.6),
+    transparent
+  );
+}
+
+/* ================================
+   TEXT
+   ================================ */
+
+.hero-tagline {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #2c3e50;
+  margin-top: 1.6rem;
+}
+
+.hero-subtext {
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #0b1c24;
+  margin-bottom: 2.4rem;
+}
+
+/* ================================
+   GLASS CARD
+   ================================ */
+
+.hero-glass-card {
+  max-width: 420px;
+  margin: 3.5rem auto 0;
+  padding: 1.8rem 2rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  box-shadow:
+    0 12px 42px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.hero-glass-card h5 {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #0b1c24;
+}
+
+.hero-glass-card p {
+  font-size: 0.95rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* ================================
+   SUBTLE GLOW (Warm, UI-safe)
+   ================================ */
+
+@keyframes glowPulse {
+  0% {
+    text-shadow:
+      0 0 6px rgba(70, 90, 100, 0.25),
+      0 0 18px rgba(70, 90, 100, 0.12);
+  }
+  50% {
+    text-shadow:
+      0 0 12px rgba(70, 90, 100, 0.45),
+      0 0 30px rgba(70, 90, 100, 0.22);
+  }
+  100% {
+    text-shadow:
+      0 0 6px rgba(70, 90, 100, 0.25),
+      0 0 18px rgba(70, 90, 100, 0.12);
+  }
+}
